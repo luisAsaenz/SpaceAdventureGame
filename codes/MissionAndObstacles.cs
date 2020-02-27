@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
@@ -39,9 +39,9 @@ namespace SpaceAdventure
             }
             else if (Console.CursorLeft == 47 && Console.CursorTop == 24)
             {
-                Console.Clear();
                 if (t < 1)
                 {
+                    Console.Clear();
                     Console.WriteLine("\n\n\nCollected..");
                     Stats.EMoney += 1000;
                     Console.WriteLine("\n$1000");
@@ -50,7 +50,7 @@ namespace SpaceAdventure
                 }
                 else if (t >= 1 )
                 {
-                    Console.WriteLine("You have already collected this treasure");
+                    return;
                 }
                 Console.ReadKey();
 
@@ -60,9 +60,9 @@ namespace SpaceAdventure
             }
             else if (Console.CursorLeft == 122 && Console.CursorTop == 27)
             {
-                Console.Clear();
                 if (t2 < 1)
                 {
+                    Console.Clear();
                     Console.WriteLine("\n\n\nCollected..");
                     Stats.jade += 3;
                     Console.WriteLine("\n3 Jades Collected");
@@ -70,7 +70,7 @@ namespace SpaceAdventure
                 }
                 else if (t2 >= 1)
                 {
-                    Console.WriteLine("You have already collected this treasure");
+                    return;
                 }
                 Console.ReadKey();
                 Console.Clear();
@@ -218,16 +218,16 @@ namespace SpaceAdventure
             }
             else if (Console.CursorLeft == 94 && Console.CursorTop == 19)
             {
-                Console.Clear();
                 if (t3 < 1)
                 {
+                    Console.Clear();
                     Console.Write("YOU FOUND A DRAGON BALL");
                     Stats.dragonball += 1;
                     t3++;
                 }
                 else if (t3 >= 1)
                 {
-                    Console.WriteLine("You have already collected this item.");
+                    return;
                 }
                 Console.ReadKey();
                 Console.Clear();
@@ -408,16 +408,16 @@ namespace SpaceAdventure
             }
             else if (Console.CursorLeft == 93 && Console.CursorTop == 15 || Console.CursorLeft == 92 && Console.CursorTop == 15 || Console.CursorLeft == 91 && Console.CursorTop == 15)
             {
-                Console.Clear();
                 if (t5 < 1)
                 {
+                    Console.Clear();
                     Console.Write("You obtained a dragon ball. This item is priceless.\n\nBy the way this is Frieza's ship be careful...");
                     Stats.dragonball += 1;
                     t5++;
                 }
                 else if (t5 >=1)
                 {
-                    Console.WriteLine("Dragonball has already been collected what are you still doing here??");
+                    return;
                 }
                 Console.ReadKey();
                 Console.Clear();
@@ -485,16 +485,16 @@ namespace SpaceAdventure
             }          
             else if (Console.CursorLeft == 47 && Console.CursorTop == 21)
             {
-                Console.Clear();
                 if (t7 < 1)
                 {
+                    Console.Clear();
                     Console.Write("You obtained a dragon ball. This item is priceless.\n\nBy the way this is Frieza's ship be careful...");
                     Stats.dragonball += 1;
                     t7++;
                 }
                 else if (t7 >= 1)
                 {
-                    Console.WriteLine("Dragonball has already been collected what are you still doing here??");
+                   return;
                 }
                 Console.ReadKey();
                 Console.Clear();
